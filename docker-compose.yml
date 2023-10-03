@@ -7,7 +7,7 @@ services:
     image: postgres # Official PostgreSQL image
     restart: always
     volumes:
-      - postgres_data:/var/lib/postgresql/data # Mounts host volume to container volume
+      - ./volumes/postgres_data:/var/lib/postgresql/data # Mounts host volume to container volume
     environment:
       - POSTGRES_DB=total
       - POSTGRES_USER=postgres
@@ -44,8 +44,8 @@ services:
       - total-network
 
 # Named volumes
-volumes:
-  postgres_data:
+# volumes:
+#   postgres_data:
 
 networks:
   total-network:
