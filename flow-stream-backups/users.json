@@ -113,8 +113,8 @@
       "config": {
         "template": "{\n\tname: \"Kasra\",\n\tsurname: \"Karami\"\n}"
       },
-      "x": 318.9757385253906,
-      "y": 93.96702194213867,
+      "x": 313.9757385253906,
+      "y": 126.96181869506836,
       "component": "object",
       "connections": {
         "output": [
@@ -175,8 +175,8 @@
         ],
         "rewrite": true
       },
-      "x": 621.9792175292969,
-      "y": 194.9739646911621,
+      "x": 594.9739685058594,
+      "y": 241.97050094604492,
       "component": "cwmlm413ef",
       "connections": {
         "output": [
@@ -224,7 +224,7 @@
         "type": "json",
         "code": 200
       },
-      "x": 959.9653625488281,
+      "x": 926.9618225097656,
       "y": 192.9687614440918,
       "component": "cw73ld8c35",
       "connections": {},
@@ -246,8 +246,8 @@
         "type": "json",
         "code": 500
       },
-      "x": 959.9826965332031,
-      "y": 319.98266220092773,
+      "x": 929.9826965332031,
+      "y": 411.97919845581055,
       "component": "cw73ld8c35",
       "connections": {},
       "template": {
@@ -267,8 +267,8 @@
       "config": {
         "connection": "postgresql://postgres:postgres@postgres/total"
       },
-      "x": 228.99307250976562,
-      "y": 455.99828720092773,
+      "x": 842.9774475097656,
+      "y": 652.9774894714355,
       "component": "cv1yv14fb3",
       "connections": {},
       "template": {
@@ -289,7 +289,39 @@
         ]
       }
     },
-    "groups": []
+    "groups": [],
+    "ilnat88at": {
+      "id": "ilnat88at",
+      "config": {
+        "model": "text-davinci-003",
+        "apikey": ""
+      },
+      "x": 162.97744750976562,
+      "y": 582.986156463623,
+      "component": "chatgpt",
+      "connections": {},
+      "template": {
+        "icon": "ti ti-robot-alt",
+        "group": "Services",
+        "name": "ChatGPT",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Question"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "output",
+            "name": "Answer"
+          },
+          {
+            "id": "error",
+            "name": "Error"
+          }
+        ]
+      }
+    }
   },
   "variables": {},
   "sources": {},
