@@ -37,7 +37,7 @@ services:
       - .:/app
     depends_on:
       - postgres
-    # command: "npm run migrate && npm run start"
+    # command: "npm run migrate && npm run seed"
     ports:
       - "8000:8000"
     networks:
