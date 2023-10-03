@@ -265,7 +265,7 @@
     "ilnanslbf": {
       "id": "ilnanslbf",
       "config": {
-        "connection": "postgresql://postgres:postgres@total-postgres:5432/total-pg"
+        "connection": "postgresql://postgres:postgres@postgres/total"
       },
       "x": 228.99307250976562,
       "y": 455.99828720092773,
@@ -294,7 +294,5 @@
   "variables": {},
   "sources": {},
   "proxypath": "/users/",
-  "dtcreated": "2023-10-03T20:59:46.361Z",
-  "dtupdated": "2023-10-03T21:00:45.929Z",
-  "memory": 0
+  "dtcreated": "2023-10-03T20:59:46.361Z"
 }
