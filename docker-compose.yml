@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  # PostgreSQL container with mounted data volume
+  postgres:
+    container_name: postgres
+    image: postgres # Official PostgreSQL image
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Mounts host volume to container volume
+    environment:
+      - POSTGRES_DB=total
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PORT=5432
+    networks:
+      - total-network
+
+  # Adminer container
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - 9000:8080
+    networks:
+      - total-network
+
+  flow:
+    container_name: flow
+    image: totalplatform/flow
+    restart: always
+    build:
+      context: . # Use dockerfile in current dir
+      dockerfile: dockerfile # dockerfile name
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
+    # command: "npm run migrate && npm run start"
+    ports:
+      - "8000:8000"
+    networks:
+      - total-network
+
+# Named volumes
+volumes:
+  postgres_data:
+
+networks:
+  total-network:
+    driver: bridge
