@@ -1,0 +1,16 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "Just init node.js for using knex",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "npx knex migrate:latest",
+    "seed": "npx knex seed:run"
+  },
+  "author": "Kasra Karami <Kasra.Karami.KK@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.5.1",
+    "pg": "^8.11.3"
+  }
+}
