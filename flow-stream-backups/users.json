@@ -1,12 +1,12 @@
 {
   "paused": false,
-  "id": "fIW1RDC1cq61f",
+  "id": "fIW1oxV1cN61f",
   "reference": "",
-  "author": "",
+  "author": "Kasra Karami",
   "group": "",
   "icon": "ti ti-users-alt",
   "color": "#A4FB4E",
-  "version": "",
+  "version": "0.0.1",
   "readme": "",
   "url": "https://",
   "name": "Users",
@@ -294,5 +294,7 @@
   "variables": {},
   "sources": {},
   "proxypath": "/users/",
-  "dtcreated": "2023-10-03T18:27:44.135Z"
+  "dtcreated": "2023-10-03T20:59:46.361Z",
+  "dtupdated": "2023-10-03T21:00:45.929Z",
+  "memory": 0
 }
