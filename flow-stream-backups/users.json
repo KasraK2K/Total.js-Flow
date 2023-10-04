@@ -87,8 +87,8 @@
         "upload": false,
         "send": "all"
       },
-      "x": 31.961807250976562,
-      "y": 30.972225189208984,
+      "x": 64.99131774902344,
+      "y": 65.00000381469727,
       "component": "cw8ey8a628",
       "connections": {
         "output": [
@@ -115,8 +115,8 @@
       "config": {
         "template": "{\n\tname: \"Kasra\",\n\tsurname: \"Karami\"\n}"
       },
-      "x": 239.97396850585938,
-      "y": 30.937496185302734,
+      "x": 282.9861297607422,
+      "y": 65.99826431274414,
       "component": "object",
       "connections": {
         "output": [
@@ -177,8 +177,8 @@
         ],
         "rewrite": true
       },
-      "x": 446.9704895019531,
-      "y": 54.96528244018555,
+      "x": 508.9930877685547,
+      "y": 88.97570419311523,
       "component": "cwmlm413ef",
       "connections": {
         "output": [
@@ -226,8 +226,8 @@
         "type": "json",
         "code": 200
       },
-      "x": 767.9427185058594,
-      "y": 104.96528244018555,
+      "x": 822.9861297607422,
+      "y": 136.98785018920898,
       "component": "cw73ld8c35",
       "connections": {},
       "template": {
@@ -248,8 +248,8 @@
         "type": "json",
         "code": 500
       },
-      "x": 767.9774475097656,
-      "y": 190.97222518920898,
+      "x": 823.9930877685547,
+      "y": 214.99132919311523,
       "component": "cw73ld8c35",
       "connections": {},
       "template": {
@@ -274,8 +274,8 @@
         "upload": false,
         "send": "all"
       },
-      "x": 29.96527099609375,
-      "y": 288.99306869506836,
+      "x": 46.98783874511719,
+      "y": 386.9965476989746,
       "component": "cw8ey8a628",
       "connections": {
         "output": [
@@ -303,8 +303,8 @@
         "type": "json",
         "code": 200
       },
-      "x": 765.9549255371094,
-      "y": 340.93752670288086,
+      "x": 1201.9878997802734,
+      "y": 400.9895896911621,
       "component": "cw73ld8c35",
       "connections": {},
       "template": {
@@ -324,13 +324,13 @@
       "config": {
         "connection": "postgresql://postgres:postgres@postgres/total"
       },
-      "x": 447.9427185058594,
-      "y": 312.9427146911621,
+      "x": 466.9878387451172,
+      "y": 409.99132919311523,
       "component": "cv1yv14fb3",
       "connections": {
         "output": [
           {
-            "id": "ilnatdi1b",
+            "id": "ilnc7i21u",
             "index": "input"
           }
         ]
@@ -361,13 +361,13 @@
         "data": "{\n\tquery: 'SELECT * FROM admins;'\n}",
         "restart": true
       },
-      "x": 32.94270324707031,
-      "y": 479.95660400390625,
+      "x": 53.99305725097656,
+      "y": 1005.9896240234375,
       "component": "c6dnjccf0e",
       "connections": {
         "output": [
           {
-            "id": "ilnau9ttw",
+            "id": "ilnc7v6rb",
             "index": "input"
           }
         ]
@@ -384,69 +384,13 @@
         ]
       }
     },
-    "ilnau9qo8": {
-      "id": "ilnau9qo8",
-      "config": {
-        "repo": false,
-        "data": true
-      },
-      "x": 446.9704895019531,
-      "y": 535.9548950195312,
-      "component": "c6jjm6e7f",
-      "connections": {},
-      "template": {
-        "icon": "ti ti-print",
-        "group": "Common",
-        "name": "Print",
-        "inputs": [
-          {
-            "id": "input",
-            "name": "Input"
-          }
-        ]
-      }
-    },
-    "ilnau9ttw": {
-      "id": "ilnau9ttw",
-      "config": {
-        "connection": "postgresql://postgres:postgres@postgres/total"
-      },
-      "x": 238.94097900390625,
-      "y": 513.9236450195312,
-      "component": "cv1yv14fb3",
-      "connections": {
-        "output": [
-          {
-            "id": "ilnau9qo8",
-            "index": "input"
-          }
-        ]
-      },
-      "template": {
-        "icon": "ti ti-database",
-        "group": "Databases",
-        "name": "PostgreSQL",
-        "inputs": [
-          {
-            "id": "input",
-            "name": "Input"
-          }
-        ],
-        "outputs": [
-          {
-            "id": "output",
-            "name": "Output"
-          }
-        ]
-      }
-    },
     "ilnaukveh": {
       "id": "ilnaukveh",
       "config": {
         "template": "{\n\tquery: 'SELECT * FROM admins;'\n}"
       },
-      "x": 238.984375,
-      "y": 289.99132919311523,
+      "x": 240.9895782470703,
+      "y": 386.9965476989746,
       "component": "object",
       "connections": {
         "output": [
@@ -474,7 +418,409 @@
         ]
       }
     },
-    "groups": []
+    "ilnc75jru": {
+      "id": "ilnc75jru",
+      "config": {
+        "name": "Admin",
+        "path": "",
+        "schema": [
+          {
+            "id": "qqk2q9lo",
+            "label": "Name",
+            "name": "id",
+            "type": "number",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "tp6pe4da",
+            "label": "Name",
+            "name": "first_name",
+            "type": "string",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "9vrlkinkw",
+            "label": "Name",
+            "name": "surname",
+            "type": "string",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "89l7wbpsp",
+            "label": "Name",
+            "name": "contact_number",
+            "type": "string",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "a22a4ll6",
+            "label": "Name",
+            "name": "email",
+            "type": "email",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "servzeezv",
+            "label": "Name",
+            "name": "is_active",
+            "type": "boolean",
+            "required": false,
+            "array": false,
+            "default": "true"
+          },
+          {
+            "id": "39hu4ivad",
+            "label": "Name",
+            "name": "is_block",
+            "type": "boolean",
+            "required": false,
+            "array": false,
+            "default": "false"
+          },
+          {
+            "id": "g633o2ghi",
+            "label": "Name",
+            "name": "is_archive",
+            "type": "boolean",
+            "required": false,
+            "array": false,
+            "default": "false"
+          },
+          {
+            "id": "pdjhu3mrn",
+            "label": "Name",
+            "name": "is_superuser",
+            "type": "boolean",
+            "required": false,
+            "array": false,
+            "default": "false"
+          },
+          {
+            "id": "kwws19gmk",
+            "label": "Name",
+            "name": "roles",
+            "type": "number",
+            "required": false,
+            "array": true
+          },
+          {
+            "id": "0sme61km6",
+            "label": "Name",
+            "name": "created_at",
+            "type": "date",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "k1tiwaywe",
+            "label": "Name",
+            "name": "updated_at",
+            "type": "date",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "hlh15hi3",
+            "label": "Name",
+            "name": "archived_at",
+            "type": "date",
+            "required": false,
+            "array": false
+          },
+          {
+            "id": "h9cydzzx3",
+            "label": "Name",
+            "name": "last_login_at",
+            "type": "date",
+            "required": false,
+            "array": false
+          }
+        ],
+        "rewrite": true
+      },
+      "x": 920.9896087646484,
+      "y": 350.9895896911621,
+      "component": "cwmlm413ef",
+      "connections": {
+        "output": [
+          {
+            "id": "ilnatdi1b",
+            "index": "input"
+          }
+        ],
+        "error": [
+          {
+            "id": "ilnc7a3eb",
+            "index": "input"
+          }
+        ]
+      },
+      "template": {
+        "icon": "ti ti-file",
+        "group": "Transformations",
+        "name": "Model",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Data"
+          },
+          {
+            "id": "partial",
+            "name": "Partial data"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "output",
+            "name": "Output"
+          },
+          {
+            "id": "error",
+            "name": "Error"
+          }
+        ]
+      }
+    },
+    "ilnc7a3eb": {
+      "id": "ilnc7a3eb",
+      "config": {
+        "type": "json",
+        "code": 500
+      },
+      "x": 1201.9878997802734,
+      "y": 479.99132919311523,
+      "component": "cw73ld8c35",
+      "connections": {},
+      "template": {
+        "icon": "ti ti-share",
+        "group": "REST API",
+        "name": "Response",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Response"
+          }
+        ]
+      }
+    },
+    "ilnc7fq2v": {
+      "id": "ilnc7fq2v",
+      "config": {
+        "repo": false,
+        "data": true
+      },
+      "x": 922.9948577880859,
+      "y": 562.9948081970215,
+      "component": "c6jjm6e7f",
+      "connections": {},
+      "template": {
+        "icon": "ti ti-print",
+        "group": "Common",
+        "name": "Print",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Input"
+          }
+        ]
+      }
+    },
+    "ilnc7i21u": {
+      "id": "ilnc7i21u",
+      "config": {
+        "code": "data = data.rows",
+        "clear": false
+      },
+      "x": 677.9947967529297,
+      "y": 429.99132919311523,
+      "component": "transformer",
+      "connections": {
+        "output": [
+          {
+            "id": "ilnc7fq2v",
+            "index": "input"
+          },
+          {
+            "id": "ilnc75jru",
+            "index": "input"
+          }
+        ]
+      },
+      "template": {
+        "icon": "ti ti-pulse",
+        "group": "Common",
+        "name": "Transformer",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Input"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "output",
+            "name": "Output"
+          }
+        ]
+      }
+    },
+    "ilnc7v6ra": {
+      "id": "ilnc7v6ra",
+      "config": {
+        "connection": "postgresql://postgres:postgres@postgres/total"
+      },
+      "x": 463.99305725097656,
+      "y": 1062.9948425292969,
+      "component": "cv1yv14fb3",
+      "connections": {
+        "output": [
+          {
+            "id": "ilnc7v6rd",
+            "index": "input"
+          }
+        ]
+      },
+      "template": {
+        "icon": "ti ti-database",
+        "group": "Databases",
+        "name": "PostgreSQL",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Input"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "output",
+            "name": "Output"
+          }
+        ]
+      }
+    },
+    "ilnc7v6rb": {
+      "id": "ilnc7v6rb",
+      "config": {
+        "template": "{\n\tquery: 'SELECT * FROM admins;'\n}"
+      },
+      "x": 255.00001525878906,
+      "y": 1038.9931030273438,
+      "component": "object",
+      "connections": {
+        "output": [
+          {
+            "id": "ilnc7v6ra",
+            "index": "input"
+          }
+        ]
+      },
+      "template": {
+        "icon": "ti ti-list-alt",
+        "group": "Data",
+        "name": "Object",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Input"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "output",
+            "name": "Output"
+          }
+        ]
+      }
+    },
+    "ilnc7v6rc": {
+      "id": "ilnc7v6rc",
+      "config": {
+        "repo": false,
+        "data": true
+      },
+      "x": 898.9930572509766,
+      "y": 1107.9948425292969,
+      "component": "c6jjm6e7f",
+      "connections": {},
+      "template": {
+        "icon": "ti ti-print",
+        "group": "Common",
+        "name": "Print",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Input"
+          }
+        ]
+      }
+    },
+    "ilnc7v6rd": {
+      "id": "ilnc7v6rd",
+      "config": {
+        "code": "data = data.rows",
+        "clear": false
+      },
+      "x": 680.9983062744141,
+      "y": 1085.9896240234375,
+      "component": "transformer",
+      "connections": {
+        "output": [
+          {
+            "id": "ilnc7v6rc",
+            "index": "input"
+          }
+        ]
+      },
+      "template": {
+        "icon": "ti ti-pulse",
+        "group": "Common",
+        "name": "Transformer",
+        "inputs": [
+          {
+            "id": "input",
+            "name": "Input"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "output",
+            "name": "Output"
+          }
+        ]
+      }
+    },
+    "groups": [
+      {
+        "id": "glnc7wald",
+        "x": 33.99305725097656,
+        "y": 962.9948272705078,
+        "width": 1121.95666,
+        "height": 482.94266,
+        "name": "Trigger"
+      },
+      {
+        "id": "glnc7xu0m",
+        "x": 32.98609924316406,
+        "y": 336.9965515136719,
+        "width": 1342.6366600000001,
+        "height": 572.62166,
+        "name": "Admin List"
+      },
+      {
+        "id": "glnc81grl",
+        "x": 34.99131774902344,
+        "y": 13.984375,
+        "width": 979.30566,
+        "height": 279.32266,
+        "name": "Health Check",
+        "background": "rgba(215,253,231,0.3)"
+      }
+    ]
   },
   "variables": {},
   "sources": {},
